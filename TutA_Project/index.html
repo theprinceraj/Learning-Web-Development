@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prince Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&display=swap" rel="stylesheet">
+    <style>
+        .navbar li {
+            color: white;
+            display: inline-block;
+        }
+
+        .navbar li a {
+            text-decoration: none;
+            color: white;
+            padding: 34px 23px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(168, 162, 162);
+        }
+
+        body {
+            font-family: 'Baloo 2', cursive;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/gym.jpg');
+            /* background-repeat: no-repeat; */
+        }
+
+        .left {
+            /* border: 2px solid red; */
+            position: absolute;
+            top: 18px;
+            left: 20px;
+            line-height: 28px;
+        }
+
+        .mid {
+            /* border: 2px solid green; */
+            display: block;
+            width: 50%;
+            margin: 18px auto;
+        }
+
+        .right {
+            /* border: 2px solid blueviolet; */
+            display: inline-block;
+            position: absolute;
+            top: 18px;
+            right: 20px;
+        }
+
+        .left img {
+            margin-left: 10px;
+            width: 63px;
+            filter: invert(100%);
+        }
+
+        .left div {
+            text-align: center;
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai', cursive;
+            color: rgb(0, 0, 0);
+            margin: 0px 9px;
+            font-size: 20px;
+            background-color: black;
+            color: white;
+            padding: 4px 14px;
+            border: 2px solid grey;
+            border-radius: 14px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(31, 30, 30);
+        }
+
+        .container {
+            background-color: rgba(41, 42, 44, 0.349);
+        border: 2px solid white;
+        margin: 106px 80px;
+        padding: 75px;
+        width: 33%;
+        border-radius: 28px;
+    }
+
+        .form-group input {
+        font-family: 'Baloo Bhai', cursive;
+        text-align: center;
+        display: block;
+        width: 400px;
+        padding: 10px;
+        border: 2px solid black;
+        margin: 11px auto;
+        font-size: 24px;
+        border-radius: 8px;
+    }
+    .container h1 {
+        text-align: center;
+    }
+    .container button {
+        display: block;
+        width: 74%;
+        margin: 20px auto;
+    }
+    </style>
+</head>
+
+<body>
+    <header>
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="img/logo.png" alt="Logo">
+            <div>Prince Fitness</div>
+        </div>
+        <!-- mid for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Our Partners</a></li>
+            </ul>
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn">Call Us</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best gym in Patna!</h1>
+        <form action="backend.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Name">
+                <input type="number" name="" placeholder="Age">
+                <input type="tel" name="" placeholder="Phone">
+                <input type="email" name="" placeholder="Email">
+                <input type="text" name="" placeholder="Address">
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
