@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size Units</title>
+    <style>
+        html{
+            font-size: 15px;
+        }
+        .container{
+            /* width: 233px; */
+            width: 100vw; /* 100vw means puri width lelega screen ki */
+            /* height: 233px; */
+            height: 100vh; /* 100vh means puri height lelega screen ki */
+            border: 2px solid red;
+            font-size: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        #first {
+            font-size: 3em; /* it is 3 times the height of parent i.e. container */
+            padding: 3em; /* it is 3 times the height of parent i.e. font-size */
+        }
+        #second {
+            font-size: 3rem; /* it is 3 times the height of html size defined */
+            padding: 3rem; /* it is 3 times the height of html size defined */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 id="first">This is first heading</h1>
+        <h1 id="second">This is second heading</h1>
+        <h1 id="third">This is third heading</h1>
+    </div>
+</body>
+</html>

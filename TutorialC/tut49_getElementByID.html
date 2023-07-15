@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript : getElementByID</title>
+
+</head>
+<body>
+    <div class="container">
+        <h3>This is main heading</h3>
+        <div id="content"></div>
+        <div class="para">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure dolorem eum labore, aperiam officiis, cum rerum quaerat debitis fuga repudiandae nihil nostrum neque esse quisquam facilis fugit tempora voluptatibus ipsum reiciendis asperiores. Animi.</p>
+        </div>
+    </div>
+    <script>
+        var sentence = "<h1>Hello, I am heading adding by javascript dynamically</h1>";
+        console.log(sentence);
+        document.getElementById('content').innerHTML = sentence;
+    </script>
+</body>
+</html>

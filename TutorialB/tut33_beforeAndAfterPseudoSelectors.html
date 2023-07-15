@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Before and After Pseudo Selectors</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kablammo&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header::before{
+            background: url('https://picsum.photos/1920/1080') no-repeat center center/cover;
+            width: 100vw;
+            height: 100vh;
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        section {
+            height: 344px;
+            justify-content: center;
+            margin: 3px 23px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* section::before{
+            content: "This is a content";
+        }
+        section::after{
+            content: "This is a content";
+        } */
+        .navigation {
+            font-family: 'Bebas Neue', sans-serif;
+            font-size: 20px;
+            display: flex;
+            margin-top: 0px;
+            background-color: rgba(0, 0, 0, 0.29);
+        }
+
+        li {
+            list-style: none;
+            padding: 20px 23px;
+        }
+
+        h3 {
+            font-size: 4rem;
+            font-family: 'Kablammo', cursive;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="navigation">
+                <li class="item">Home</li>
+                <li class="item">About</li>
+                <li class="item">Services</li>
+                <li class="item">Contact Us</li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <h3>Welcome to Coding World</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, praesentium. Maxime obcaecati veritatis
+            suscipit consectetur consequuntur modi inventore amet. Eveniet minus totam cupiditate velit! Commodi
+            saepe voluptatibus, optio cum hic molestias eos consectetur sed?</p>
+    </section>
+    <hr>
+</body>
+
+</html>

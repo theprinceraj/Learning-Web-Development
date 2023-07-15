@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyframes and Animations</title>
+    <style>
+        .container {
+            background-color: yellowgreen;
+
+        }
+
+        .box1 {
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation-name: bhaalu1;
+            animation-duration: 2s;
+            /* animation-iteration-count: infinite; */
+            animation-iteration-count: 3;
+
+            /* animation-fill-mode: forwards; iteration count finish hone ke baad , ending wala scene show karega */
+            /* animation-fill-mode: forwards; */
+
+            /* animation-fill-mode: alternate; iteration count finish hone ke baad , starting wala scene show karega */
+            animation-fill-mode: alternate;
+
+
+            /* animation-timing-function: ease-in; isme pehle animate slow hoga fir fast hojayega */
+            /* animation-timing-function: ease-in; */
+
+            /* animation-timing-function: ease-out; isme pehle fast hoga animation aur last mei slow hojayega */
+            animation-timing-function: ease-out;
+
+            /* animation-delay: 3s; isme 3 second wait karega webpage load ke baad and then animation start hoga */
+            /* animation-delay: 3s; */
+
+            animation-direction: reverse;
+            /* animation reverse hoga isme */
+        }
+
+        @keyframes bhaalu1 {
+            from {
+                width: 200px;
+            }
+
+            to {
+                width: 1400px;
+            }
+        }
+
+        .box2 {
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            animation-name: bhaalu2;
+            animation-duration: 8s;
+            animation-iteration-count: 1;
+            /* animation-fill-mode: alternate; */
+            /* animation-timing-function: ease-in-out; */
+            /* animation-direction: reverse; */
+        }
+
+        @keyframes bhaalu2 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+            25% {
+                top: 250px;
+                left: 0px;
+            }
+            75% {
+                top: 250px;
+                left: 250px;
+            }
+            100% {
+                top: 0px;
+                left: 250px;
+            }
+
+        }
+
+        .box3 {
+            background-color: green;
+            width: 250px;
+            height: 250px;
+            position: relative;
+            
+            /* Shorthand for writing animation properties in one line */
+            /* animation: animation-name animation-duration animation-timing-function animation-delay animation-iteration-count animation-fill-mode */
+            animation: bhaalu3 5s ease-in 2s 6 reverse forwards;
+        }
+        @keyframes bhaalu3 {
+            0% {
+                top: 0px;
+                left: 0px;
+            }
+            25% {
+                top: 500px;
+                left: 0px;
+            }
+            75% {
+                top: 500px;
+                left: 500px;
+            }
+            100% {
+                top: 0px;
+                left: 500px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box1">
+            This is a box 1
+        </div>
+        <div class="box2">
+            This is a box 2
+        </div>
+        <div class="box3">
+            This is a box 3
+        </div>
+    </div>
+</body>
+
+</html>

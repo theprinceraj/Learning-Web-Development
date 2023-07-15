@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS : forEach and for</title>
+</head>
+
+<body>
+    <div class="container">
+        This is my webpage.
+    </div>
+    <script>
+        let names = ["rahul", 'sohan', 'bhaalu', 'shyam'];
+
+
+        names.forEach(function f(element) {
+            console.log(`${element} is a good person.`);
+        });
+
+        // new way to loop through arrays
+        for (name of names) {
+            console.log(`${name} is a good person.`);
+
+        }
+
+        // new way to loop through objects
+        let namesObject = {
+            name1 : "rohan",
+            name2 : "lol",
+            name3 : "hahah",
+            name4 : "bhaalu",
+        };
+        // new way to loop through objects
+        for(name in namesObject) {
+            console.log(`${namesObject[name]} is a good person and is denoted by ${name}.`);
+        }
+    </script>
+</body>
+
+</html>

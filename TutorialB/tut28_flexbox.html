@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Tutorial</title>
+    <style>
+        .container{
+            height: 544px;
+            width: 100%;
+            border: 2px solid black;
+            
+            display: flex; /* Initializing the container as a flex box */
+
+            /* Flex properties for flex container */
+
+            /* flex-direction: row; default value of flex-direction is row only */
+            /* flex-direction: column;
+            flex-direction: row-reverse;
+            flex-direction: column-reverse; */
+
+            flex-wrap: wrap; /* default value is no wrap  */
+            /* flex-wrap: wrap-reverse; */
+            flex-wrap: nowrap;
+            
+            /* shorthand to configure both flex-wrap and flex-direction in one line */
+            /* flex-flow: row-reverse wrap;  */
+
+            /* justify-content will justify the content in horizontal direction  */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+
+            /* align-items does the same job as justify-content but in horizontal direction  */
+            /* align-items: flex-end; */
+            /* align-items: stretch; */
+            /* align-items: flex-start; */
+            /* align-items: center; */
+            
+
+        }
+        .item:hover{
+            background-color: rgb(49, 34, 31);
+            color: white;
+        }
+        .item{
+            width: 150px;
+            height: 150px;
+            background-color: tomato;
+            border: 2px solid green;
+            margin: 10px;
+            padding: 3px;
+        }
+        #item-1{
+            /* Flex properties for a flex item */
+            /* Jiska order sabse zyada wo sabse last mei dikaya jayega horizontally */
+            order: 2; 
+ 
+            /* Jiska flex-grow jyada hoga, wo utne jyada speed se expand karega when screen size increases and flex box gets a chance to expand */
+            /* flex-grow: 2; */
+            /* flex-grow does not support negative numbers */
+        }
+        #item-2{
+            /* flex-grow: 4;*/
+            /* flex-shrink work exactly opposite of flex-grow and works when screen size decreases */
+            /* flex-shrink: 3; */
+
+            flex-basis: 200px;
+            /* when flex-direction is set to row then flex-basis will control width*/
+            /* when flex-direction is set to column then flex-basis will control height*/
+        }
+        #item-3{
+            /* Shorthand for flex */
+            /* flex: (grow-value) (shrink-value) (basis-value) */
+            /* flex: 2 2 244px; */
+
+            /* align-self: flex-end; */
+            /* align-self: flex-start; */
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flexbox Tutorial</h1>
+    <div class="container">
+        <div class="item" id="item-1">First Box</div>
+        <div class="item" id="item-2">Second Box</div>
+        <div class="item" id="item-3">Third Box</div>
+        <!-- <div class="item" id="item-4">Fourth Box</div>
+        <div class="item" id="item-5">Fifth Box</div>
+        <div class="item" id="item-6">Sixth Box</div> -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript : Interaction(Alert, Prompt, Confirm)</title>
+</head>
+<body>
+    <div class="container">This is a page.</div>
+    <script>
+        // Alert in in-browser Javascript : does not return anything
+        alert("This is  a message!");
+
+        // Prompt in JS
+        let name = prompt("What is your name?", "Guest"); // Second parameter is optional and is the default text that appears in prompt box.
+        console.log(name);
+
+        // Confirm is JS
+        let deletePost = confirm("Do you really want to delete this post?");
+        console.log(deletePost);
+
+        if(deletePost){
+            console.log("Your post was deleted.")
+        } else {
+            console.log("Your post was not deleted.")
+        }
+    </script>
+</body>
+</html>

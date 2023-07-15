@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Selectors</title>
+    <style>
+        h1{
+            background-color: red;
+            color: black;
+            text-align: center;
+            font-weight: bold;
+        }
+         /* (div > p) matlab all those <p> jiska direct parent <div> ho */
+        /* div > p{
+            color: yellow;
+            font-weight: bold;
+            background-color: green;
+        } */
+
+         /* (div + p) matlab all those <p> jiska pichla sibling <div> ho */
+        /* div + p{
+            color: white;
+            background-color: black;
+        } */
+    </style>
+</head>
+<body>
+    <h1>This is more on selectors</h1>
+    <div class="container">
+        <div class="row">
+            <ul>
+                <li id="item"><p>This is another paragraph inside li</p></li>
+                <li>this is not affected</li>
+                <p>this is a para inside ul</p>
+            </ul>
+            <p>This is a paragraph</p>
+        </div>
+        <p>This is another paragraph</p>
+    </div>
+    <p>This is outermost paragraph</p>
+</body>
+</html>

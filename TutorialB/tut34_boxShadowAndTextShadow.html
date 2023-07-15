@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadow and Text Shadow</title>
+    <style>
+        .container {
+            display: flex;
+        }
+
+        .card {
+            margin: 23px 12px;
+            padding: 23px 12px;
+            background-color: burlywood; 
+
+            /* border: 2px solid red; */
+            /* In box-shadow: both rgb and rgba are allowed, in rgba, alpha value determines the visibility of colour */
+            box-shadow: 10px 13px green; /*box-shadow: x-offset y-offset shadowColor */
+            box-shadow: -10px -13px green; 
+            box-shadow: 7px 5px 10px green; /*box-shadow: x-offset y-offset blurRadius shadowColor */
+            box-shadow: 7px 5px 10px 5px green; /*box-shadow: x-offset y-offset blurRadius spreadRadius shadowColor */
+            /* above were all offset examples of box-shadow */
+
+            /* below are inset examples of box-shadow */
+            box-shadow: inset 27px 32px green;
+
+            /* multiple box shadow in one line syntax */
+            box-shadow: 10px 13px red, 21px 7px green;
+        }
+        .card h1{
+            /* text-shadow: 3px 4px red; */
+            text-shadow: 3px 4px 7px red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card" id="card-1">
+            <h1>This is C++ Course</h1>
+            <p>I have started C++ course which does not mean that we will stop this course. We will continue this course to completion. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore possimus molestiae blanditiis cumque
+                facilis dolor! Minus sit doloremque reprehenderit quae? Tenetur, labore, sapiente nam ex ipsum magni
+                unde dolorum, tempore officia explicabo soluta debitis.</p>
+        </div>
+        <div class="card" id="card-2">
+            <h1>Card 2</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore possimus molestiae blanditiis cumque
+                facilis dolor! Minus sit doloremque reprehenderit quae? Tenetur, labore, sapiente nam ex ipsum magni
+                unde dolorum, tempore officia explicabo soluta debitis.</p>
+        </div>
+        <div class="card" id="card-3">
+            <h1>Card 3</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore possimus molestiae blanditiis cumque
+                facilis dolor! Minus sit doloremque reprehenderit quae? Tenetur, labore, sapiente nam ex ipsum magni
+                unde dolorum, tempore officia explicabo soluta debitis.</p>
+        </div>
+    </div>
+</body>
+
+</html>

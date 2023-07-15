@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timeout and Intervals</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            margin: 0px;
+            padding: 0px;
+        }
+        .container {
+            display: block;
+            border: 2px solid rgb(51, 0, 255);
+            height: 2fr;
+            width: 2fr;
+            align-items: center;
+        }
+        #text {
+            background-color: blue;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="text">
+            Time Clock:
+        </div>
+        <span id="time"></span>
+    </div>
+    
+    <script>
+        console.log('This is tutorial 58.');
+
+        // setTimeout ----> allows us to run the function only once after an interval of time
+        // setInterval ----> allows us to run the function repeatedly after every fixed interval of time
+        // clearTimeout ----> allows us to clear a scheduled setTimeout() function
+
+        /*function greet() {
+            console.log('Hello, Good Morning!');
+        }
+        function greetArgs(name, byeText){
+            console.log(`${byeText}, ${name}!`);
+        }
+
+        // setTimeout();
+        setTimeout(() => {
+            greet();
+        }, 2000);
+        // or use the following syntax
+        setTimeout(greet, 4000);
+        // syntax with arguments to function
+        setTimeout(greetArgs, 6000, "Bhaalu", "Bye, take care");
+        // setTimeout(greet(), 20000); ---> wrong as it is calling the function inside setTimeout
+
+
+        // clearTimeout();
+        let timeOutID = setTimeout(greetArgs, 80000, "Daksh", "Bye broooo");
+        console.log(timeOutID);
+        // clearTimeout(timeOutID); ---> this will clear the previously scheduled timeOutID
+
+
+        // setInterval();
+        setInterval(greet, 10000);
+        // setInterval can also be used for various ways by which setTimeout() is used.
+        setInterval(() => {
+            greetArgs("Bhaalu", "ayooo");
+        }, 10000);
+        let intervalID = setInterval(greetArgs, 10000, "Shubh", "Lololol");
+        clearInterval(intervalID); // this will clear interval previously created 
+        */
+
+        // Practical Application
+        function displayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+        displayTime();
+        setInterval(displayTime, 1000);
+    </script>
+</body>
+</html>

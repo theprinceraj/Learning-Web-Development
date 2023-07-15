@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Variable Custom Properties</title>
+    <style>
+        :root{
+            --border-color: green; /* this is a global variable and valid in entire css */
+            --maxw: 333px;
+        }
+        .box {
+            /* variables in CSS are declared like below */
+            --box-color: rgb(58, 47, 219); /* this is a local variable and only valid in .box block */
+            width: 200px;
+            height: 200px; 
+            background-color: var(--box-color); /* used a local variable */
+            box-shadow: 3px 3px var(--box-color); /* used a local variable */
+            border: 2px solid red;
+            margin: 2px 9px;
+        }
+
+        .container {
+            --box-color: rgb(58, 47, 219); /* this is a local variable and only valid in .container block */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: var(--box-color); /* used a local variable */
+            border: 4px solid var(--border-color); /* used a global variable */
+            max-width: var(--maxw);
+            margin: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+
+</html>
