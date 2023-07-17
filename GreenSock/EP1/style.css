@@ -12,9 +12,34 @@ body {
 }
 
 #page1 {
+    width: 100%;
+    height: 100%;
     background-color: cyan;
 }
 
 #box {
     background-color: crimson;
+    height: 300px;
+    width: 300px;
+}
+
+h1 {
+    color: red;
+}
+
+h2 {
+    color: blue;
+}
+
+h3 {
+    color: green;
+}
+
+p {
+    color: brown;
+    font-weight: 600;
+}
+
+h6 {
+    background-color: pink;
 }
