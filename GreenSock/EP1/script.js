@@ -59,3 +59,22 @@ gsap.to('h5', {
     repeat:'-1',
     yoyo: true
 });
+
+// Timeline in GSAP
+let timelineVar = gsap.timeline();
+timelineVar.to('#testingTimeline1', {
+    x: '500px',
+    color: 'violet',
+});
+timelineVar.to('#testingTimeline2', {
+    x: '500px',
+    color: 'violet',
+});
+timelineVar.to('#testingTimeline3', {
+    x: '500px',
+    color: 'violet',
+});
+timelineVar.to('#testingTimeline4', {
+    x: '500px',
+    color: 'violet',
+});
