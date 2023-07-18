@@ -16,10 +16,36 @@ body {
     width: 100%;
     display: flex;
     align-items: center;
-    justify-self: center;
+    justify-content: center;
+}
+
+#page1 {
+    background-color: aqua;
+}
+
+#page2 {
+    background-color: greenyellow;
+}
+
+#page3 {
+    background-color: pink;
+}
+
+#page4 {
+    background-color: lightgray;
+}
+
+#page5 {
+    background-color: lightgreen;
+}
+
+#page6 {
+    background-color: lightgoldenrodyellow;
 }
 
 .box {
+    height: 300px;
+    width: 300px;
     background-color: red;
     border: 2px solid black;
 }
