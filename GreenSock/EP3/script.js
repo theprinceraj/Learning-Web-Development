@@ -71,7 +71,7 @@ gsap.from('#page7 #box7', {
         scroller: 'body',
         markers: true,
         start: "top 60%",
-        end: "top 30%",
+        end: "top 50%",
         scrub: 5,
     }
 });
