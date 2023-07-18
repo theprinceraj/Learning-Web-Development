@@ -93,17 +93,24 @@ nav>a>img {
 #main>img {
     position: absolute;
     border-radius: 1rem;
-    height: 10rem;
 }
 #main>#left-img-top {
     top: 22%;
     left: 11%;
+    height: 10rem;
+}
+#main>#left-img-bottom {
+    bottom: 12%;
+    left: 18%;
+    width: 20rem;
 }
 #main>#right-img-top {
     top: 1%;
     right: 21%;
+    height: 10rem;
 }
 #main>#right-img-bottom {
     top: 60%;
     right: 11%;
+    height: 10rem;
 }
