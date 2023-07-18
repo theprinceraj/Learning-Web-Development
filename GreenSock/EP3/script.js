@@ -61,3 +61,17 @@ gsap.from('#page6 #box6', {
         //also if scrub value is true, it makes it reversible i.e. if we scroll back, the animation is reversed too
     }
 });
+gsap.from('#page7 #box7', {
+    opacity: 0,
+    scale: 0,
+    rotate: 360,
+    // scrollTrigger with customized settings
+    scrollTrigger: {
+        trigger: "#page7 #box7",
+        scroller: 'body',
+        markers: true,
+        start: "top 60%",
+        end: "top 30%",
+        scrub: 5,
+    }
+});
