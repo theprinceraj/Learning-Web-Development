@@ -63,3 +63,25 @@ nav>a>img {
     padding: 0.7rem 1rem;
     border: none;
 }
+
+#main>h1 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main>h1>span {
+    font-size: 1.8rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0 1rem;
+    padding: 1.5rem;
+    background-color: #7E3836;
+    border-radius: 6rem;
+}
+
+#main>h1:nth-child(2) {
+    color: red;
+}
