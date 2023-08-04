@@ -1,0 +1,13 @@
+.navbar-brand>img {
+    margin-right: 4px;
+    height: 30px;
+}
+
+.feature-icon {
+    border-radius: 8px;
+    padding: 13px;
+}
+
+.feature-icon img {
+    height: 35px;
+}
